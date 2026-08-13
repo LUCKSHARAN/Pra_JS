@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Heading -->
+        <h1>📚 Student Task Manager</h1>
+
+        <!-- Add Task Section -->
+        <div class="task-form">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter Task Name">
+
+            <select id="priority">
+
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+
+            </select>
+
+            <input
+                type="date"
+                id="dueDate">
+
+            <button id="addBtn">
+                Add Task
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Task">
+
+        </div>
+
+        <!-- Filter -->
+
+        <div class="filter-box">
+
+            <select id="filter">
+
+                <option value="All">All Tasks</option>
+
+                <option value="Completed">
+                    Completed
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+            </select>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h3>Total</h3>
+
+                <p id="totalTask">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <p id="completedTask">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Pending</h3>
+
+                <p id="pendingTask">0</p>
+
+            </div>
+
+        </div>
+
+        <!-- Task List -->
+
+        <div id="taskContainer">
+
+            <!-- Tasks will appear here -->
+
+        </div>
+
+    </div>
+    <script src="script.js">Js_sheet</script>   
+</body>
+</html>

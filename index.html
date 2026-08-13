@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <p id="js">What is JS?</p>
+    <img src="ice1.jpg" alt="ice" id="imgs">
+    <br>
+    <button onclick="document.getElementById('js').innerHTML='<h1>JavaScript in Scripting language used to add the functionality to the web page</h1>' ">Full Form</button>
+
+    <button onclick="document.getElementById('js').style.fontFamily='Courier New' ">change the font</button>
+
+    <button onclick="document.getElementById('imgs').src='ice2.jpg' ">Image</button>
+
+    <button onclick="document.getElementById('js').innerText='Inner Text' ">Inner Text</button>
+
+    <h2 id="year" onclick="leapyear()">Click hear to calculate the year</h2>
+
+    <button onclick="leapyear()">Year</button>
+
+    <br>
+
+    <button type="button" onclick="pra()">Array</button>
+
+</body>
+</html>
